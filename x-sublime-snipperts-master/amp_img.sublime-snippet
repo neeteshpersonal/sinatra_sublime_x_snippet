@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+<%= amp_img(src:"$1",width:"$2",height:"$3",layout:"responsive",alt:"$4")%>
+		]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>amp_img</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

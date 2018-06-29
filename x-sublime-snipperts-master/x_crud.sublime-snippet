@@ -1,0 +1,86 @@
+<snippet>
+	<content><![CDATA[
+########################################################
+#
+# $1 CRUD
+#
+########################################################
+
+
+###########################  $1 List ############################		
+get "/$2/?" do 
+	@$3s = $4.all(deleted: false)
+	erb :"../modules/$7/views/index"
+end
+
+###########################  $1 View Modal ############################		
+get "/$2/:id" do
+	@$3 = $4.first(x_id: params[:id])
+	@page_title = "#{@$3.name}"
+	erb :"../modules/$7/views/detail"${8:, :layout => :modal_layout}
+end
+
+###########################  $1 Add Modal ############################		
+get "/$2/add/?" do
+	@$3 = $4.new
+	@action = "/$2/add/"
+	erb :"../modules/$7/views/$5_form", :layout => :modal_layout
+end
+
+###########################  $1 Add Post ############################		
+post "/$2/add/?" do
+	@$3 = $4.create(params[:post]) 
+
+	unless @$3.errors.count == 0
+		flash[:error] = @$3.errors.full_messages.flatten.join(', ')
+		redirect "/$2/add/"
+	else
+		flash[:success] = "$6 Added"
+    redirect "/$2/?"
+  end
+
+end
+
+###########################  $1 Edit Modal ############################		
+get "/$2/edit/:id" do
+	@$3 = $4.first(x_id: params[:id])
+	@action = "/$2/edit/#{params[:id]}"
+	erb :"../modules/$7/views/$5_form", :layout => :modal_layout
+end
+
+###########################  $1 Edit Post ############################		
+post "/$2/edit/:id" do
+	@$3 = $4.first(x_id: params[:id])
+	@$3.update(params[:post]) 
+
+	unless @$3.errors.count == 0
+		flash[:error] = @$3.errors.full_messages.flatten.join(', ')
+		redirect "/$2/edit/#{params[:id]}"
+	else
+		flash[:success] = "$6 Updated"
+    redirect "/$2/?"
+  end
+
+end
+
+###########################  $1 Delete ############################		
+get "/$2/delete/:id" do
+	# @$3 = $4.first(x_id: params[:id]).destroy
+	@$3 = $4.first(x_id: params[:id]).update(deleted: true, deleted_at: Time.now)
+
+	unless @$3 == true
+		flash[:error] = @$3.errors.full_messages.flatten.join(', ')
+		redirect "/$2/"
+	else
+		flash[:success] = "$6 Deleted"
+    redirect "/$2/?"
+  end
+
+	
+end
+		]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>x_crud</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

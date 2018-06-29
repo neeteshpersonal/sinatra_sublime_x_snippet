@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+<% content_for ${1::css_scripts}${2::js_scripts} do %>
+
+<% end %>]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>x_contentfor</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

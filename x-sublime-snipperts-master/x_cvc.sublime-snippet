@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[<%= x_cvc(${1:name: "${2:value}", }${3:id: "${2:value}", }${5:value: @${6:value}, }${7:label: "${8:value}", }${9:required: true, }${10:placeholder: "${11:value}"}) %>]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>x_cvc</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[<%= x_submit(${1:label: "${2:Submit}", }${3:css: "${4:btn-fill btn-info}", }${5:icon: "fa-${6:check}"}${7:, size: "${8:btn-lg}" }) %>]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>x_submit</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

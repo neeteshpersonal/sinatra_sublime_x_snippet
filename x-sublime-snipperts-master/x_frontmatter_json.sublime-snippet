@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+;;;
+"layout": "layout",
+"meta_keywords": "",
+"meta_description": "",
+"title_tag": ""
+]
+;;;
+		]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>x_frontmatter_json</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

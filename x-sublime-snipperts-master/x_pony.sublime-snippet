@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+	Pony.mail to: ${1:"email@email.com"}, 
+	subject: ${2:"subject"},
+	html_body: erb(:"emails/${3:file_name}", :layout => :email_layout)
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>x_pony</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

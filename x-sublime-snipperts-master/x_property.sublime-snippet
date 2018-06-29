@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+property :${1:name}, ${2:String|Integer|Boolean|Text},${3:default: "${4:default_value}", },${5:required: ${6:false}, }${7:format: ${8::email_address}, }${9:unique: ${10:true}, }
+		]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>x_property</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

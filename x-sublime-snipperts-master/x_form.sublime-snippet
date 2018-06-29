@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+<form id="${1}" method="post" action="${2}" role="form" data-parsley-validate>
+
+</form>
+		]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>x_form</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

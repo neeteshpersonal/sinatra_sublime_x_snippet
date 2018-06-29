@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[
+		<table class="datatable table table-striped">
+			<thead>
+				${1:<th>${2}</th>}
+				${3:<th>${4}</th>}
+				${5:<th>${6}</th>}
+			</thead>
+			<tbody>
+				<% @${7}.each do |${8:item}| %>
+					${9:<td><%= ${8:item}.${10} %></td>}
+					${11:<td><%= ${8:item}.${12} %></td>}
+					${13:<td><%= ${8:item}.${14} %></td>}
+				<% end %>
+			</tbody>
+		</table>
+		]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>x_datatable</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

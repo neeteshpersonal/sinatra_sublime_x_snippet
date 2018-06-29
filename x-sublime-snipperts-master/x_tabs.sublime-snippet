@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+	<%= x_tabs(active: "$1", tabs: [
+	{url:"/retailers/dashboard/#{@$1.x_id}",name:"$2", icon:"fa-tachometer"},
+	]) %>]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>x_tabs</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+<%= c_promo(
+	title: "",
+	subtitle: "",
+	cta_link: "",
+	cta: "",
+	cta_css_class: "",
+	css_class: "",
+	parallax_image: "",
+	container: false,
+	border: false,
+	dark: false, 
+	align: "left",
+	flat: false, 
+	full: true, 
+	uppercase: false, 
+	mini: false
+	)
+%> 
+		]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>c_promo</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

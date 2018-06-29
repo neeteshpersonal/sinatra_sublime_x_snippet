@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+erb :"../modules/${1:folder_name}/views/${2:/file_name}" ${3:, layout: :${4:modal_layout}}
+		]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>x_erb</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

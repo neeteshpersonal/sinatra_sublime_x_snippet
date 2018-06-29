@@ -1,0 +1,37 @@
+<snippet>
+	<content><![CDATA[
+<!-- Start Table -->
+<div class="table-wrapper">
+ <div class="toolbar">
+      <!--  Here you can write extra buttons/actions for the toolbar  -->
+ </div>
+	<table class="datatable table table-hover">
+		<thead>
+			<tr>
+				<th>$1</th>
+				<th data-field="actions" class="td-actions text-right">Actions</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<% @$2.each do |$3| %>
+			<tr>
+				
+				<td><a href="/$2/<%= $3.x_id %>"><%= $3.name %></a></td>
+				<td>
+					<a href="/$2/<%= $3.x_id %>" class="btn btn-xs btn-default"><i class="fa fa-search" data-toggle="tooltip" data-placement="top" title="Detail"></i></a>
+					<a href="/$2/edit/<%= $3.x_id %>" class="btn btn-xs btn-info" ><i class="fa fa-pencil-square-o" data-toggle="tooltip" data-placement="top" title="Edit"></i></a>
+					<a href="/$2/delete/<%= $3.x_id %>" class="btn btn-xs btn-danger delete-row" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash-o text-danger"></i></a>
+				</td>
+			</tr>
+			<% end %>
+		</tbody>
+	</table>
+</div>
+<!-- End Table -->
+		]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>x_table</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

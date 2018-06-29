@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+<% content_for :modal_title do %>${1}<% end %>
+<% content_for :button_text do %>${2:Close}<% end %>
+<form id="$3" method="post" action="<%= @action %>" role="form" data-parsley-validate>
+</form>
+		]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>x_modal_form</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

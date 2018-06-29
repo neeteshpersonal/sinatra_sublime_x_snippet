@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+<%= x_card_top${1:(title: "${2}", ${3:subtitle: "${4:value}"})} %>
+<%= x_card_bottom %>
+		]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>x_card</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

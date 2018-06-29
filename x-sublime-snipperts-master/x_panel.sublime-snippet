@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+<%= x_panel_top${1:(title: "${2}")}%>
+<%= x_panel_bottom %>
+		]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>x_panel</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

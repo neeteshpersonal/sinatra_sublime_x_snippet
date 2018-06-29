@@ -1,0 +1,70 @@
+<snippet>
+	<content><![CDATA[
+class ${1:Class}
+include DataMapper::Resource
+
+storage_names[:default] = '${2:table_name}'
+
+########################################################
+#
+# Properties
+#
+########################################################
+property :id, Serial
+property :x_id, UUID, required: true, unique: true, default: proc { UUIDTools::UUID.random_create }
+property :active, Boolean, default: true
+
+########################################################
+#
+# Timestamps
+#
+########################################################
+property :created_at, DateTime
+property :updated_at, DateTime
+
+
+########################################################
+#
+# Soft Deletes
+#
+########################################################
+property :deleted, Boolean, default: false
+property :deleted_at, DateTime
+
+
+########################################################
+#
+# Relationships
+#
+########################################################
+
+
+########################################################
+#
+# Hooks
+#
+########################################################
+
+
+########################################################
+#
+# Additional Methods
+# Use SecureRandom.hex(64)
+#
+#
+########################################################
+
+
+########################################################
+#
+# end class
+#
+########################################################
+
+end 
+		]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>x_model</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

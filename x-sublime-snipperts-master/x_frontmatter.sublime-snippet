@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+---
+layout: "${1:layout}"
+title_tag: "$2"
+meta_keywords: ""
+meta_description: ""
+changefreq: "monthly"
+priority: "0.5"
+---
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>x_frontmatter</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

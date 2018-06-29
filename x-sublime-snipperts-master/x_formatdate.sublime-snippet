@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+<%= x_format_date(${1:date: ${2:Time.now}, }${3:show_month: ${4:true}, }${5:show_time: ${6:false})}%>
+		]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>x_formatdate</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

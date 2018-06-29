@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+<%= c_sections(
+	type: "slider",
+	cta_link: "",
+	cta: "",
+	cta_css_class: "",
+	body: "",
+	title: "",
+	subtitle: "",
+	image: "",
+	image_alt: "",
+	image_css_class: "",
+	background_image: "",
+	video: ""
+	)
+%> 
+		]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>c_sections</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

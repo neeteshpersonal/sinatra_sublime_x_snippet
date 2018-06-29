@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[<%= x_switch(${1:name: "${2:value}", }${3:id: "${2:value}", }${5:value: @${6:value}, }${7:checked: ${8:true},}${9:label: ${10:"Label"}}) %>]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>x_switch</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

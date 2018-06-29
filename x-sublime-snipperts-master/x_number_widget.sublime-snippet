@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+<%= x_number_widget(label: "$1", value: "$2"${3:, icon: "$4"}) %>
+		]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>x_number_widget</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
